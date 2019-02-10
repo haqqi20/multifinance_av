@@ -98,13 +98,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="10" />
-          <entry key="ts" value="33" />
+          <entry key="ts" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="10" />
-          <entry key="TypeScript" value="33" />
+          <entry key="TypeScript" value="36" />
         </counts>
       </usages-collector>
     </session>
@@ -129,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/app.menu.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="110">
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -148,8 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fa-</find>
-      <find>gradient</find>
       <find>context</find>
       <find>dropdown</find>
       <find>select</find>
@@ -178,6 +176,8 @@
       <find>sass</find>
       <find>mome</find>
       <find>v3</find>
+      <find>theme</find>
+      <find>v4</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -509,12 +509,12 @@
       <workItem from="1544180740169" duration="1498000" />
       <workItem from="1544424252229" duration="4434000" />
       <workItem from="1544524758916" duration="360000" />
-      <workItem from="1549782510704" duration="3348000" />
+      <workItem from="1549782510704" duration="3750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152673000" />
+    <option name="totallyTimeSpent" value="153075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -861,8 +861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.menu.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="110">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>

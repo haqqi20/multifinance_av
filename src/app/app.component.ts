@@ -19,7 +19,7 @@ export class AppComponent implements AfterViewInit {
 
     darkMenu = false;
 
-    profileMode = 'inline';
+    profileMode = 'top';
 
     rotateMenuButton: boolean;
 

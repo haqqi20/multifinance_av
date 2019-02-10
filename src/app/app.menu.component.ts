@@ -26,13 +26,6 @@ export class AppMenuComponent implements OnInit {
 
     ngOnInit() {
         this.model = [
-            {
-                label: 'Bootstrap Version', icon: 'fa fa-fw  fa-tags',
-                items: [
-                    {label: 'Bootstrap v3', icon: 'fa fa-fw fa-tag',  command: () => this.changeVersion('v3')},
-                    {label: 'Bootstrap v4', icon: 'fa fa-fw fa-tag',  command: () => this.changeVersion('v4')}
-                ]
-            },
             {label: 'Dashboard', icon: 'fa fa-fw fa-home', routerLink: ['/']},
             {
                 label: 'Customization', icon: 'fa fa-fw fa-bars' , badge: '8',

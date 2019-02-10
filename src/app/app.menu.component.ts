@@ -20,7 +20,7 @@ export class AppMenuComponent implements OnInit {
 
     layout = 'blue';
 
-    version = 'v3';
+    version = '-v4';
 
     constructor(public app: AppComponent) {}
 
@@ -194,12 +194,9 @@ export class AppMenuComponent implements OnInit {
     changeTheme(theme: string) {
         const themeLink: HTMLLinkElement = <HTMLLinkElement> document.getElementById('theme-css');
 
-        if (this.version === 'v3') {
+        if (this.version === '-v4') {
             themeLink.href =  'assets/theme/theme-' + theme + '.css';
-        } else {
-            themeLink.href =  'assets/theme/theme-' + theme + '-v4' + '.css';
         }
-
         this.theme = theme;
 
     }
@@ -207,12 +204,9 @@ export class AppMenuComponent implements OnInit {
     changeLayout(layout: string, special?: boolean) {
         const layoutLink: HTMLLinkElement = <HTMLLinkElement> document.getElementById('layout-css');
 
-        if (this.version === 'v3') {
+        if (this.version === '-v4') {
             layoutLink.href = 'assets/layout/css/layout-' + layout + '.css';
-        } else {
-            layoutLink.href = 'assets/layout/css/layout-' + layout + '-v4' + '.css';
         }
-
         this.layout = layout;
 
         if (special) {
@@ -224,16 +218,11 @@ export class AppMenuComponent implements OnInit {
         const themeLink: HTMLLinkElement = <HTMLLinkElement> document.getElementById('theme-css');
         const layoutLink: HTMLLinkElement = <HTMLLinkElement> document.getElementById('layout-css');
 
-        if (version === 'v3') {
-            this.version = 'v3';
+        if (version === '-v4') {
+            this.version = '-v4';
             themeLink.href =  'assets/theme/theme-' + this.theme + '.css';
             layoutLink.href = 'assets/layout/css/layout-' + this.layout + '.css';
-        } else {
-            themeLink.href =  'assets/theme/theme-' + this.theme + '-v4' + '.css';
-            layoutLink.href = 'assets/layout/css/layout-' + this.layout + '-v4' + '.css';
-            this.version = '-v4';
         }
-
     }
 }
 

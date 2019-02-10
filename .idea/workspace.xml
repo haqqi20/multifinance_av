@@ -106,7 +106,7 @@
           <entry key="css" value="1" />
           <entry key="html" value="28" />
           <entry key="scss" value="7" />
-          <entry key="ts" value="408" />
+          <entry key="ts" value="415" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -114,7 +114,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="41" />
           <entry key="SCSS" value="7" />
-          <entry key="TypeScript" value="395" />
+          <entry key="TypeScript" value="402" />
         </counts>
       </usages-collector>
     </session>
@@ -136,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.topbar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="231" column="14" lean-forward="true" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
+            <state relative-caret-position="298">
+              <caret line="256" column="55" lean-forward="true" selection-start-line="256" selection-start-column="55" selection-end-line="256" selection-end-column="55" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -184,11 +184,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/app.menu.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
+            <state relative-caret-position="-1105">
+              <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
               <folding>
                 <element signature="e#0#80#0" expanded="true" />
               </folding>
@@ -228,8 +228,8 @@
       <find>inline</find>
       <find>parentActive</find>
       <find>them</find>
-      <find>change</find>
       <find>right</find>
+      <find>change</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -301,13 +301,13 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/demo/view/documentation.component.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/app/app.menu.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.profile.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/styles.scss" />
         <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/src/app/app.topbar.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.menu.component.ts" />
       </list>
     </option>
   </component>
@@ -567,12 +567,12 @@
       <workItem from="1544180740169" duration="1498000" />
       <workItem from="1544424252229" duration="4434000" />
       <workItem from="1544524758916" duration="360000" />
-      <workItem from="1549782510704" duration="15598000" />
+      <workItem from="1549782510704" duration="16026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164923000" />
+    <option name="totallyTimeSpent" value="165351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -903,16 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.menu.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/primeng/components/tieredmenu/tieredmenu.metadata.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -936,10 +926,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.topbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="231" column="14" lean-forward="true" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
+        <state relative-caret-position="298">
+          <caret line="256" column="55" lean-forward="true" selection-start-line="256" selection-start-column="55" selection-end-line="256" selection-end-column="55" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.menu.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1105">
+          <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
           </folding>
         </state>
       </provider>

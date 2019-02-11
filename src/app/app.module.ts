@@ -84,7 +84,6 @@ import {CarService} from './multifinance/dashboard/service/carservice';
 import {CountryService} from './multifinance/dashboard/service/countryservice';
 import {EventService} from './multifinance/dashboard/service/eventservice';
 import {NodeService} from './multifinance/dashboard/service/nodeservice';
-import { AcquisitionComponent } from './multifinance/acquisition/acquisition.component';
 
 @NgModule({
     imports: [
@@ -168,7 +167,6 @@ import { AcquisitionComponent } from './multifinance/acquisition/acquisition.com
         AppFooterComponent,
         AppProfileComponent,
         DashboardDemoComponent,
-        AcquisitionComponent,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

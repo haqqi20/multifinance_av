@@ -40,6 +40,12 @@ export class AppMenuComponent implements OnInit {
                     {label: 'Dark Menu', icon: 'fa fa-moon-o fa-fw',  command: () => this.app.darkMenu = true}
                 ]
             },
+            {
+                label: 'Acquisition', icon: 'fa fa-fw fa-bars' ,
+                items: [
+                    {label: 'Aplication', icon: 'fa fa-fw fa-bars', routerLink: ['/']},
+                ]
+            },
             // {
             //     label: 'Layout Colors', icon: 'fa fa-fw fa-magic',
             //     items: [

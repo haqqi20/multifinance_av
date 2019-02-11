@@ -78,12 +78,13 @@ import {AppMenuComponent, AppSubMenuComponent} from './app.menu.component';
 import {AppTopBarComponent} from './app.topbar.component';
 import {AppFooterComponent} from './app.footer.component';
 import {AppProfileComponent} from './app.profile.component';
-import {DashboardDemoComponent} from './demo/multifinance/dashboarddemo.component';
+import {DashboardDemoComponent} from './multifinance/dashboard/dashboarddemo.component';
 
-import {CarService} from './demo/service/carservice';
-import {CountryService} from './demo/service/countryservice';
-import {EventService} from './demo/service/eventservice';
-import {NodeService} from './demo/service/nodeservice';
+import {CarService} from './multifinance/dashboard/service/carservice';
+import {CountryService} from './multifinance/dashboard/service/countryservice';
+import {EventService} from './multifinance/dashboard/service/eventservice';
+import {NodeService} from './multifinance/dashboard/service/nodeservice';
+import { AcquisitionComponent } from './multifinance/acquisition/acquisition.component';
 
 @NgModule({
     imports: [
@@ -167,6 +168,7 @@ import {NodeService} from './demo/service/nodeservice';
         AppFooterComponent,
         AppProfileComponent,
         DashboardDemoComponent,
+        AcquisitionComponent,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

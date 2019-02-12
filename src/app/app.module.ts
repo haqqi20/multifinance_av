@@ -84,6 +84,14 @@ import {CarService} from './multifinance/dashboard/service/carservice';
 import {CountryService} from './multifinance/dashboard/service/countryservice';
 import {EventService} from './multifinance/dashboard/service/eventservice';
 import {NodeService} from './multifinance/dashboard/service/nodeservice';
+import { AplicationComponent } from './multifinance/acquisition/aplication/aplication.component';
+import { SurveyComponent } from './multifinance/acquisition/survey/survey.component';
+import { ApprovalComponent } from './multifinance/acquisition/approval/approval.component';
+import { PoComponent } from './multifinance/acquisition/po/po.component';
+import { DisbursementComponent } from './multifinance/acquisition/disbursement/disbursement.component';
+import { ProductsComponent } from './multifinance/acquisition/products/products.component';
+import { CustomerComponent } from './multifinance/acquisition/customer/customer.component';
+import { DealerComponent } from './multifinance/acquisition/dealer/dealer.component';
 
 @NgModule({
     imports: [
@@ -167,6 +175,14 @@ import {NodeService} from './multifinance/dashboard/service/nodeservice';
         AppFooterComponent,
         AppProfileComponent,
         DashboardDemoComponent,
+        AplicationComponent,
+        SurveyComponent,
+        ApprovalComponent,
+        PoComponent,
+        DisbursementComponent,
+        ProductsComponent,
+        CustomerComponent,
+        DealerComponent,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

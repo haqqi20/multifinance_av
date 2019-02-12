@@ -23,6 +23,9 @@ export class AppMenuComponent implements OnInit {
     version = '-v4';
 
     constructor(public app: AppComponent) {}
+    addMenu() {
+        this.model.push({label: 'New Menu', icon: 'fa fa-fw fa-wrench', routerLink: ['survey']});
+    }
 
     ngOnInit() {
         this.model = [
@@ -37,13 +40,20 @@ export class AppMenuComponent implements OnInit {
                     {label: 'Inline Profile', icon: 'fa fa-sun-o fa-fw',  command: () => this.app.profileMode = 'inline'},
                     {label: 'Top Profile', icon: 'fa fa-moon-o fa-fw',  command: () => this.app.profileMode = 'top'},
                     {label: 'Light Menu', icon: 'fa fa-sun-o fa-fw',  command: () => this.app.darkMenu = false},
-                    {label: 'Dark Menu', icon: 'fa fa-moon-o fa-fw',  command: () => this.app.darkMenu = true}
+                    {label: 'Dark Menu', icon: 'fa fa-moon-o fa-fw',  command: () => this.app.darkMenu = true},
                 ]
             },
             {
                 label: 'Acquisition', icon: 'fa fa-fw fa-bars' ,
                 items: [
-                    {label: 'Aplication', icon: 'fa fa-fw fa-bars', routerLink: ['/']},
+                    {label: 'Aplication', icon: 'fa fa-fw fa-bars', command: () => this.addMenu()},
+                    {label: 'Survey', icon: 'fa fa-fw fa-bars', routerLink: ['survey']},
+                    {label: 'Approval', icon: 'fa fa-fw fa-bars', routerLink: ['approval']},
+                    {label: 'PO', icon: 'fa fa-fw fa-bars', routerLink: ['po']},
+                    {label: 'Disbursement', icon: 'fa fa-fw fa-bars', routerLink: ['disbursement']},
+                    {label: 'Products', icon: 'fa fa-fw fa-bars', routerLink: ['products']},
+                    {label: 'Customer', icon: 'fa fa-fw fa-bars', routerLink: ['customer']},
+                    {label: 'Dealer', icon: 'fa fa-fw fa-bars', routerLink: ['dealer']},
                 ]
             },
             // {

@@ -151,14 +151,21 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
                         </ul>
                     </li>
                     <li #search class="search-item" [ngClass]="{'active-top-menu':app.activeTopbarItem === search}"
-                        (click)="app.onTopbarItemClick($event,search)">
+                        (click)="app.onTopbarItemClick($event,search)" style="margin-left: 518px">
                         <div class="topbar-search">
                             <input type="text" placeholder="Search" />
                             <i class="fa fa-search"></i>
                         </div>
                     </li>
-                    <!--<p-tieredMenu #menu [model]="model" [popup]="true"></p-tieredMenu>-->
-                    <!--<i class="fa fa fa-fw fa-list" (click)="menu.toggle($event)"><label>Change</label></i>-->
+                    <li role="menuitem">
+                        <a (click)="menu1.toggle($event)">
+                            <i class="fa fa-book fa-fw"></i>
+                            <span>Choose</span>
+                        </a>
+                    </li>
+                    <p-tieredMenu #menu1 [model]="aqui" [popup]="true"></p-tieredMenu>
+                    <!--<p-tieredMenu #menu1 [model]="aqui" [popup]="true"></p-tieredMenu>-->
+                    <!--<button #btn type="button" pButton icon="pi pi-bars" label="Show" (click)="menu1.toggle($event)"></button>-->
                 </ul>
             </div>
         </div>
@@ -167,6 +174,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 export class AppTopBarComponent implements OnInit {
 
     @Input() reset: boolean;
+    aqui: any[];
 
     model: any[];
 
@@ -179,6 +187,11 @@ export class AppTopBarComponent implements OnInit {
     constructor(public app: AppComponent) {}
 
     ngOnInit() {
+        this.aqui = [
+            {label: 'Aquisition', icon: 'fa fa-fw fa-bars', routerLink: ['aplication']},
+            {label: 'Account Management', icon: 'fa fa-fw fa-bars', routerLink: ['survey']},
+            {label: 'Collection', icon: 'fa fa-fw fa-bars', routerLink: ['approval']},
+        ];
         this.model = [
             {
                 label: 'Customization', icon: 'fa fa-fw fa-bars' , badge: '8',

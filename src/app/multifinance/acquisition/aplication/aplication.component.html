@@ -89,7 +89,7 @@
                                 Birth Place
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="birthPlace_prsnlInf" [(ngModel)]="selectedBrithPlc_prsnlInf"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                                 Gander
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="gender_prsnlInf" [(ngModel)]="selectedGender_prsnlInf"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                                 Marital Status
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="maritalSts_prsnlInf" [(ngModel)]="selectedmaritalSts_prsnlInf"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                                 Religion
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="religion_prsnlInf" [(ngModel)]="selectedReligion_prsnlInf"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -204,25 +204,37 @@
                                     Employment Status
                                 </div>
                                 <div class="ui-g-6">
-                                    <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                    <p-dropdown [options]="employmentSts_wrkng" [(ngModel)]="selectedemploy_wrkng"
                                                 [autoWidth]="false"></p-dropdown>
                                 </div>
                             </div>
                         </div>
-                        <div class="ui-g-12 ui-md-6">
-                            <div class="ui-g-4">
-                                Start Date
-                            </div>
-                            <div class="ui-g-6">
-                                <p-calendar [(ngModel)]="startDate"></p-calendar>
+                        <div class="ui-grid-row">
+                            <div class="ui-g-12 ui-md-6">
+                                <div class="ui-g-4">
+                                    Start Date
+                                </div>
+                                <div class="ui-g-6">
+                                    <p-calendar [(ngModel)]="startDate"></p-calendar>
+                                </div>
                             </div>
                         </div>
-                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 20px;">
+
+                        <div class="ui-g-12 ui-md-6">
                             <div class="ui-g-4">
                                 End Date
                             </div>
                             <div class="ui-g-6">
                                 <p-calendar [(ngModel)]="endDate_1"></p-calendar>
+                            </div>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 30px;">
+                            <div class="ui-g-4">
+                                I am Still Working Her:
+                            </div>
+                            <div class="ui-g-3">
+                                <p-checkbox [(ngModel)]="checked" binary="true"></p-checkbox>
                             </div>
                         </div>
 
@@ -232,27 +244,30 @@
                             </div>
                         </div>
 
-                        <div class="ui-g-12 ui-md-6">
-                            <div class="ui-g-4">
-                                Occupation
+                        <div class="ui-grid-row">
+                            <div class="ui-g-12 ui-md-6">
+                                <div class="ui-g-4">
+                                    Address Type
+                                </div>
+                                <div class="ui-g-6">
+                                    <p-dropdown [options]="addrsType_addrsInfo" [(ngModel)]="selectedaddrs_addrsInfo"
+                                                [autoWidth]="false"></p-dropdown>
+                                </div>
                             </div>
-                            <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
-                                            [autoWidth]="false"></p-dropdown>
+                        </div>
+                        <div class="ui-grid-row">
+                            <div class="ui-g-12 ui-md-6">
+                                <div class="ui-g-4">
+                                    Address
+                                </div>
+                                <div class="ui-g-6">
+                                    <textarea pInputTextarea type="text"></textarea>
+                                </div>
                             </div>
                         </div>
                         <div class="ui-g-12 ui-md-6">
                             <div class="ui-g-4">
-                                Sub Occupation
-                            </div>
-                            <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
-                                            [autoWidth]="false"></p-dropdown>
-                            </div>
-                        </div>
-                        <div class="ui-g-12 ui-md-6">
-                            <div class="ui-g-4">
-                                Company Name
+                                Hamlet Number
                             </div>
                             <div class="ui-g-6">
                                 <input pInputText type="text"/>
@@ -260,7 +275,7 @@
                         </div>
                         <div class="ui-g-12 ui-md-6">
                             <div class="ui-g-4">
-                                Length Of Work
+                                Neighbour Number
                             </div>
                             <div class="ui-g-6">
                                 <input pInputText type="text"/>
@@ -268,27 +283,47 @@
                         </div>
                         <div class="ui-g-12 ui-md-6">
                             <div class="ui-g-4">
-                                Employment Status
+                                Province
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="province_addrsInfo" [(ngModel)]="selectedProv_addrsInfo"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
                         <div class="ui-g-12 ui-md-6">
                             <div class="ui-g-4">
-                                Start Date
+                                City
                             </div>
                             <div class="ui-g-6">
-                                <p-calendar [(ngModel)]="startDate_2"></p-calendar>
+                                <p-dropdown [options]="city_addrsInfo" [(ngModel)]="selectedcity_addrsInfo"
+                                            [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
                         <div class="ui-g-12 ui-md-6">
                             <div class="ui-g-4">
-                                End Date
+                                District
                             </div>
                             <div class="ui-g-6">
-                                <p-calendar [(ngModel)]="endDate_2"></p-calendar>
+                                <p-dropdown [options]="district_addrsInfo" [(ngModel)]="selectedDistrict_addrsInfo"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Sub District
+                            </div>
+                            <div class="ui-g-6">
+                                <p-dropdown [options]="subDistrict_addrsInfo" [(ngModel)]="selectedSubDis_addrsInfo"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 30px;">
+                            <div class="ui-g-4">
+                                Zipcode
+                            </div>
+                            <div class="ui-g-6">
+                                <p-dropdown [options]="zipcode_addrsInfo" [(ngModel)]="selectedZipcode_addrsInfo"
+                                            [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
 
@@ -331,7 +366,7 @@
                                 Birth Place
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="birthPlace_prsnlInf" [(ngModel)]="selectedbrithPlc_fam"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -364,11 +399,11 @@
                                 Gander
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="gender_prsnlInf" [(ngModel)]="selectedGender_fam"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
-                        <div class="ui-g-12 ui-md-6">
+                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 30px;">
                             <div class="ui-g-4">
                                 Identity Number
                             </div>
@@ -388,11 +423,11 @@
                                 Income Type
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="incomeInfo_incmInf" [(ngModel)]="selectedincomeInf_incmInf"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
-                        <div class="ui-g-12 ui-md-6">
+                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 30px;">
                             <div class="ui-g-4">
                                 Amount Per Moth
                             </div>
@@ -412,7 +447,7 @@
                                 Education Type
                             </div>
                             <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                <p-dropdown [options]="education_eduInf" [(ngModel)]="selectedEdu_eduInf"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -432,7 +467,7 @@
                                     Major
                                 </div>
                                 <div class="ui-g-6">
-                                    <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                    <p-dropdown [options]="major_eduInf" [(ngModel)]="selectedMajor_eduInf"
                                                 [autoWidth]="false"></p-dropdown>
                                 </div>
                             </div>
@@ -445,7 +480,7 @@
                                 <p-calendar [(ngModel)]="startDate_edu"></p-calendar>
                             </div>
                         </div>
-                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 20px;">
+                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 50px;">
                             <div class="ui-g-4">
                                 End Date
                             </div>
@@ -455,65 +490,6 @@
                         </div>
                     </p-tabPanel>
 
-                    <!--<p-tabPanel header="Godfather III" leftIcon="pi pi-user" rightIcon="pi pi-star" tooltip="1990">-->
-                    <!--<h1>Object Information</h1>-->
-                    <!--<div class="ui-grid-row">-->
-                    <!--<div class="ui-g-12 ui-md-12">-->
-                    <!--<div class="ui-g-4">-->
-                    <!--Business Unit-->
-                    <!--</div>-->
-                    <!--<div class="ui-g-6">-->
-                    <!--<p-dropdown [options]="cities" [(ngModel)]="selectedCity"-->
-                    <!--[autoWidth]="false"></p-dropdown>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="ui-grid-row">-->
-                    <!--<div class="ui-g-12 ui-md-12">-->
-                    <!--<div class="ui-g-4">-->
-                    <!--Objec Category-->
-                    <!--</div>-->
-                    <!--<div class="ui-g-6">-->
-                    <!--<p-dropdown [options]="cities" [(ngModel)]="selectedCity"-->
-                    <!--[autoWidth]="false"></p-dropdown>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px;">-->
-                    <!--<div class="ui-grid-row">-->
-                    <!--<h1>Automotive</h1>-->
-                    <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="ui-g-12 ui-md-6">-->
-                    <!--<div class="ui-g-4">-->
-                    <!--Dealer-->
-                    <!--</div>-->
-                    <!--<div class="ui-g-6">-->
-                    <!--<p-dropdown [options]="cities" [(ngModel)]="selectedCity"-->
-                    <!--[autoWidth]="false"></p-dropdown>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="ui-g-12 ui-md-6">-->
-                    <!--<div class="ui-g-4">-->
-                    <!--Brand-->
-                    <!--</div>-->
-                    <!--<div class="ui-g-6">-->
-                    <!--<p-dropdown [options]="cities" [(ngModel)]="selectedCity"-->
-                    <!--[autoWidth]="false"></p-dropdown>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="ui-g-12 ui-md-6">-->
-                    <!--<div class="ui-g-4">-->
-                    <!--Type-->
-                    <!--</div>-->
-                    <!--<div class="ui-g-6">-->
-                    <!--<p-dropdown [options]="cities" [(ngModel)]="selectedCity"-->
-                    <!--[autoWidth]="false"></p-dropdown>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</p-tabPanel>-->
                     <p-tabPanel header="Object & Insurance" rightIcon="pi pi-inbox"
                                 tooltip="Object & Insurance Information">
                         <h1>Object Information</h1>
@@ -829,7 +805,7 @@
                         </div>
 
                     </p-tabPanel>
-                    <p-tabPanel header="Credit Structur"  rightIcon="pi pi-inbox"
+                    <p-tabPanel header="Credit Structur" rightIcon="pi pi-inbox"
                                 tooltip="Ciredit Structur">
                         <h1>Document Information</h1>
 
@@ -879,7 +855,7 @@
                                     Total Price
                                 </div>
                                 <div class="ui-g-6">
-                                    <input pInputText type="text" />
+                                    <input pInputText type="text"/>
                                 </div>
                             </div>
                         </div>

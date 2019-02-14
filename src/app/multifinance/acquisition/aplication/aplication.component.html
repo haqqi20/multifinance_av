@@ -2,7 +2,7 @@
     <div class="ui-g-12 ui-lg-12">
         <!-- Left Side -->
         <div class="card card-w-title">
-            <h1>Aplication Entry</h1>
+            <h1>Aplication Data</h1>
             <div class="ui-g">
                 <p-tabView>
                     <p-tabPanel header="General Setting" leftIcon="pi pi-calendar" tooltip="General Setting">
@@ -12,8 +12,8 @@
                             <div class="ui-g-3">
                                 Company Type
                             </div>
-                            <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                            <div class="ui-g-4">
+                                <p-dropdown [options]="companyType_gnrl" [(ngModel)]="selectedCompany_gnrl"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -21,8 +21,8 @@
                             <div class="ui-g-3">
                                 Customer Type
                             </div>
-                            <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                            <div class="ui-g-4">
+                                <p-dropdown [options]="customerType_gnrl" [(ngModel)]="selectedCustomer_gnrl"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -30,8 +30,8 @@
                             <div class="ui-g-3">
                                 Business Activities
                             </div>
-                            <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                            <div class="ui-g-4">
+                                <p-dropdown [options]="buisinessAct_gnrl" [(ngModel)]="selectedBuisness_gnrl"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -39,8 +39,8 @@
                             <div class="ui-g-3">
                                 Financing Type
                             </div>
-                            <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                            <div class="ui-g-4">
+                                <p-dropdown [options]="financingType_gnrl" [(ngModel)]="selectedFinancing_gnrl"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>
@@ -48,8 +48,8 @@
                             <div class="ui-g-3">
                                 Order Type
                             </div>
-                            <div class="ui-g-6">
-                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                            <div class="ui-g-4">
+                                <p-dropdown [options]="orderType_gnrl" [(ngModel)]="selectedorde_gnrl"
                                             [autoWidth]="false"></p-dropdown>
                             </div>
                         </div>

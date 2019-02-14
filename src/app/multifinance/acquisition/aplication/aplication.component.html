@@ -1,3 +1,288 @@
-<p>
-  aplication works!
-</p>
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-lg-12">
+        <!-- Left Side -->
+        <div class="card card-w-title">
+            <h1>Aplication Entry</h1>
+            <div class="ui-g">
+                <p-tabView>
+                    <p-tabPanel header="General Setting" leftIcon="pi pi-calendar" tooltip="General Setting">
+                        <h1>General Setting</h1>
+                        <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                        <div class="ui-g-12 ui-md-8">
+                            <div class="ui-g-3">
+                                Company Type
+                            </div>
+                            <div class="ui-g-6">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-8">
+                            <div class="ui-g-3">
+                                Customer Type
+                            </div>
+                            <div class="ui-g-6">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-8">
+                            <div class="ui-g-3">
+                                Business Activities
+                            </div>
+                            <div class="ui-g-6">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-8">
+                            <div class="ui-g-3">
+                                Financing Type
+                            </div>
+                            <div class="ui-g-6">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-8">
+                            <div class="ui-g-3">
+                                Order Type
+                            </div>
+                            <div class="ui-g-6">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="Personal Information" rightIcon="pi pi-inbox" tooltip="Personal Information">
+                        <h1>Personal Information</h1>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Salutation
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Full Name
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Alias Name
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Birth Place
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Birth Date
+                            </div>
+                            <div class="ui-g-8">
+                                <p-calendar [(ngModel)]="date"></p-calendar>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Mother Name
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Phone Number
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Email
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Gander
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Marital Status
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Religion
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
+                            <div class="ui-grid-row">
+                                <h1>Working Information</h1>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Occupation
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Sub Occupation
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Company Name
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Length Of Work
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Employment Status
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Start Date
+                            </div>
+                            <div class="ui-g-8">
+                                <p-calendar [(ngModel)]="date"></p-calendar>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6" style="margin-bottom: 20px;">
+                            <div class="ui-g-4">
+                                End Date
+                            </div>
+                            <div class="ui-g-8">
+                                <p-calendar [(ngModel)]="date"></p-calendar>
+                            </div>
+                        </div>
+
+                        <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px;">
+                            <div class="ui-grid-row">
+                                <h1>Address Information</h1>
+                            </div>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Occupation
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Sub Occupation
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Company Name
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Length Of Work
+                            </div>
+                            <div class="ui-g-8">
+                                <input pInputText type="text"/>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Employment Status
+                            </div>
+                            <div class="ui-g-8">
+                                <p-dropdown [options]="cities" [(ngModel)]="selectedCity"
+                                            [autoWidth]="false"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                Start Date
+                            </div>
+                            <div class="ui-g-8">
+                                <p-calendar [(ngModel)]="date"></p-calendar>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6">
+                            <div class="ui-g-4">
+                                End Date
+                            </div>
+                            <div class="ui-g-8">
+                                <p-calendar [(ngModel)]="date"></p-calendar>
+                            </div>
+                        </div>
+
+                    </p-tabPanel>
+                </p-tabView>
+            </div>
+        </div>
+    </div>
+</div>

@@ -12,7 +12,7 @@ body .ui-widget-content {
 //    border: 1px solid transparent;
 //}
 .ui-tieredmenu {
-    width: 14.5em;
+    width: 15.5em;
     //padding: .25em;
 }
 body a:hover {
@@ -23,5 +23,11 @@ body a {
     color: #ffffff;
     text-decoration: none;
 }
+body .ui-widget-content {
+    font-size: 11px;
+}
 
+body .ui-inputtext {
+    font-size: 12px;
 
+}
